@@ -60,7 +60,7 @@ echo "............................................."
 echo ""
 echo "Current contents of /mnt/arch:"
 echo ""
-ls -latR /mnt/arch
+ls -la /mnt/arch
 echo ""
 echo "............................................."
 
