@@ -1,5 +1,5 @@
-#reflector -c "United Kingdom" -a 6 --sort rate --save /etc/pacman.d/mirrorlist
-#echo "ParallelDownloads = 20" >> /etc/pacman.conf
+reflector -c "United Kingdom" -a 6 --sort rate --save /etc/pacman.d/mirrorlist
+echo "ParallelDownloads = 20" >> /etc/pacman.conf
 clear
 pacstrap /mnt/arch base linux linux-firmware nano intel-ucode
 genfstab -U /mnt/arch >> /mnt/arch/etc/fstab
