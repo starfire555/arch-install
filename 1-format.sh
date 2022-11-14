@@ -53,7 +53,7 @@ mkdir /mnt/arch/boot/efi
 mount $_efi /mnt/arch/boot/efi
 rm -Rf /mnt/arch/boot/efi/EFI/arch
 
-cp -R /arch-install /mnt/arch/
+cp -R ../arch-install /mnt/arch/
 
 echo ""
 echo "............................................."
