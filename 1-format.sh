@@ -24,12 +24,12 @@ ls -lat /mnt/arch
 echo ""
 echo "............................................."
 
-echo "Devices to be formatted:"
+echo "Devices to be modified:"
 echo ""
-echo $_efi "(efi)"
-echo $_boot "(boot)"
-echo $_root "(root)"
-echo""
+echo $_root ": root (Format to btrfs with @ and @home subvolumes. Mount to /mnt/arch.)"
+echo $_boot ": boot (Format to ext4. Mount to /mnt/arch/boot.)"
+echo $_efi ": efi (Mount to /mnt/arch/efi.)"
+echo ""
 read -p "Press enter to proceed."
 
 
