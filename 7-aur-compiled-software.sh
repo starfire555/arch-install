@@ -1,5 +1,5 @@
 paru -S --noconfirm zoom
-paru -S --noconfirm darksnow && systemctl enable icecast
+paru -S --noconfirm darksnow && sudo systemctl enable icecast
 paru -S --noconfirm xrdp && paru -S --noconfirm xorgxrdp && sudo systemctl enable xrdp
 #paru -S --noconfirm handbrake-full
 
