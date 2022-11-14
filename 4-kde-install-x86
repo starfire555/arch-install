@@ -1,6 +1,6 @@
 ### KDE Install ###
 echo ">>> Installing intel drivers"
-pacman -S xf86-video-intel
+sudo pacman -S xf86-video-intel
 echo "..........................................................."
 read -p "Press enter to continue"
 
