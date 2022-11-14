@@ -30,7 +30,7 @@ pacman -S openssh grub efibootmgr networkmanager dialog mtools dosfstools git re
 echo "..........................................................."
 read -p "Press enter to continue"
 
-echo ">>> Setting march=sandybridge and MAKEFLAGS=-j5 in /etc/makepkg.config"
+echo ">>> Setting march=goldmont-plus and MAKEFLAGS=-j5 in /etc/makepkg.config"
 sed -i 's/-march=x86-64/-march=goldmont-plus/g' /etc/makepkg.conf
 sed -i 's/#MAKEFLAGS="-j2"/MAKEFLAGS="-j5"/g' /etc/makepkg.conf
 echo "..........................................................."
