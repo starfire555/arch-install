@@ -1,4 +1,4 @@
-sudo cat << EOF >> /etc/fstab
+cat << EOF >> /etc/fstab
 
 #/dev/sdb1
 UUID=7602-8686                                  /mnt/sdb		exfat           rw,relatime,user,noauto 0 0
