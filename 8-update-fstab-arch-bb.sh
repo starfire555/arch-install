@@ -10,3 +10,9 @@ UUID=d130d8a9-a47b-4ab1-b879-7e8eaecba799	/mnt/sdc		btrfs      	rw,relatime,user
 UUID=d2d4d369-9b13-4757-9abe-edb6163d454f	/mnt/sdd		btrfs      	rw,relatime,user	0 0
 
 EOF
+
+mkdir /mnt/{sdb,sdc,sdd}
+systemctl daemon-reload
+mount /mnt/sdb
+mount /mnt/sdc
+mount /mnt/sdd
