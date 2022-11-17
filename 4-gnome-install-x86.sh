@@ -1,11 +1,11 @@
 ### Gnome Install ###
-echo ">>> Installing intel drivers"
-sudo pacman -S xf86-video-intel
-echo "..........................................................."
-read -p "Press enter to continue"
+#echo ">>> Installing intel drivers"
+#sudo pacman -S xf86-video-intel
+#echo "..........................................................."
+#read -p "Press enter to continue"
 
 echo ">>> Installing Gnome"
-sudo pacman -S --noconfirm xorg gdm gnome gnome-extra gnome-tweaks
+sudo pacman -S xorg gdm gnome gnome-extra gnome-tweaks
 sudo systemctl set-default graphical
 sudo systemctl enable gdm
 
