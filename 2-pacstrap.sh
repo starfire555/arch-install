@@ -7,7 +7,7 @@ sed -i 's/#ParallelDownloads = 5/ParallelDownloads = 20/g' /etc/pacman.conf
 echo "..........................................................."
 
 clear
-pacstrap /mnt/arch base linux linux-firmware nano intel-ucode
+pacstrap /mnt/arch base linux linux-firmware nano intel-ucode btrfs-progs
 genfstab -U /mnt/arch >> /mnt/arch/etc/fstab
 
 echo ""
