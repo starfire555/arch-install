@@ -1,6 +1,6 @@
 ### xfce Install ###
 echo ">>> Installing xfce"
-sudo pacman -S xorg lightdm lightdm-gtk-greeter lightdm-gtk-greeter-settings xfce4 xfce4-goodies arc-gtk-theme arc-icon-theme papirus-icon-theme
+sudo pacman -S xorg lightdm lightdm-gtk-greeter lightdm-gtk-greeter-settings xfce4 xfce4-goodies arc-gtk-theme arc-icon-theme papirus-icon-theme rofi
 sudo systemctl set-default graphical
 sudo systemctl enable lightdm
 
