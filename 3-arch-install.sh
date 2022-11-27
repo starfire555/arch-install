@@ -44,7 +44,7 @@ echo "..........................................................."
 
 echo ">>> Installing GRUB"
 grub-install --target=x86_64-efi --efi-directory=/boot/efi --bootloader-id=arch
-# FOR INSTALL TO USB grub-install --target=x86_64-efi --efi-directory=/boot/efi --bootloader-id=arch --removeable --recheck
+# FOR INSTALL TO USB grub-install --target=x86_64-efi --efi-directory=/boot/efi --bootloader-id=arch --removable --recheck
 grub-mkconfig -o /boot/grub/grub.cfg
 #efibootmgr -o 0003
 #efibootmgr -B -b 0000
