@@ -38,14 +38,16 @@ echo "..........................................................."
 echo ">>> Setting MODULES=(btrfs) in /etc/mkinitcpio.conf"
 #sed -i 's/old-text/new-text/g' input.txt
 sed -i 's/MODULES=()/MODULES=(btrfs)/g' /etc/mkinitcpio.conf
+# FOR INSTALL TO USB sed -i 's/HOOKS=(base udev autodetect modconf kms keyboard keymap consolefont block filesystems fsck)/HOOKS=(base udev keyboard block autodetect modconf kms keymap consolefont filesystems fsck)/g' /etc/mkinitcpio.conf
 mkinitcpio -p linux #creates kernel with btrfs included
 echo "..........................................................."
 
 echo ">>> Installing GRUB"
 grub-install --target=x86_64-efi --efi-directory=/boot/efi --bootloader-id=arch
+# FOR INSTALL TO USB grub-install --target=x86_64-efi --efi-directory=/boot/efi --bootloader-id=arch --removeable --recheck
 grub-mkconfig -o /boot/grub/grub.cfg
-efibootmgr -o 0003
-efibootmgr -B -b 0000
+#efibootmgr -o 0003
+#efibootmgr -B -b 0000
 echo "..........................................................."
 
 echo ">>> Enabling NetworkManager sshd in systemd"
